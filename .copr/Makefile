@@ -8,4 +8,4 @@ srpm:
 	dnf repolist
 	cat $(outdir)/mock-source-build.cfg
 	dnf install -y dnf-plugins-core
-	dnf copr enable -y --setopt=reposdir=/tmp/yum.repos.d $COPR_USERNAME/$COPR_PROJECT
+	dnf copr enable -y --setopt=reposdir=/tmp/yum.repos.d $(COPR_USERNAME)/$(COPR_PROJECT)
