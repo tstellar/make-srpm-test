@@ -1,6 +1,6 @@
-.phony: make_srpm
+.phony: srpm
 
-make_srpm:
+srpm:
 	env
 	dnf repolist
   
